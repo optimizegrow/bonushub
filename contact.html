@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact & Support | Online Casino Help India</title>
+<meta name="description" content="Get help and support for online casino and betting in India. Learn about safe and responsible gaming.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="menu">
+ <div class="menu-toggle" id="mobile-menu">
+    &#9776;  <!-- 3-line hamburger -->
+  </div>
+  <ul class="menu-links">
+    <li><a href="index.html">Dashboard</a></li>
+    <li><a href="casino.html">Casino</a></li>
+    <li><a href="betting.html">Betting</a></li>
+    <li><a href="poker.html">Poker</a></li>
+    <li><a href="deposit.html">Deposit</a></li>
+    <li><a href="withdrawal.html">Withdrawal</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="section">
+<h1>Support and Responsible Gaming</h1>
+
+<p>
+If you need help with deposits, withdrawals or account verification, contact the casino support team directly from the platform you choose.
+Most trusted casinos offer 24/7 live chat and email assistance.
+</p>
+
+<p>
+Always play responsibly and set personal limits on time and spending.
+Online gaming should be fun and entertaining, not a source of stress.
+</p>
+
+<h2>Top Rated Casinos Today</h2>
+
+<dv class="cards">
+
+  <div class="card">
+    <img src="logo1.png" alt="Casino 1">
+    <h3>Osom Bet</h3>
+    <p class="bonus">100% Bonus up to ₹10,000</p>
+    <ul>
+      <li>Instant UPI Deposit</li>
+      <li>Fast Withdrawal</li>
+      <li>24/7 Support</li>
+    </ul>
+    <a href="Osombet.html" class="btn">Play Now</a>
+    <a href="Osombet.Review.html" class="btn">Review</a>
+  </div>
+
+  <div class="card">
+    <img src="logo2.png" alt="Casino 2">
+    <h3>Parimatch</h3>
+    <p class="bonus">₹5,000 Welcome Offer</p>
+    <ul>
+      <li>Live Casino Games</li>
+      <li>Mobile Friendly</li>
+      <li>Secure Payments</li>
+    </ul>
+    <a href="Parimatch.html" class="btn">Play Now</a>
+	<a href="Parimatch.html" class="btn">Review</a>
+  </div>
+
+  <div class="card">
+    <img src="logo3.png" alt="Casino 3">
+    <h3>Casino The World</h3>
+    <p class="bonus">Daily Cashback Bonus</p>
+    <ul>
+      <li>Cricket Betting</li>
+      <li>Low Min Deposit</li>
+      <li>Quick Signup</li>
+    </ul>
+    <a href="Casinotheworld.html" class="btn">Play Now</a>
+	<a href="Casinotheworld.html" class="btn">Review</a>
+  </div>
+
+
+</div>
+
+<h2>Need More Help?</h2>
+<p>
+Check FAQ and terms on each casino website before playing.
+Choose only trusted and licensed platforms for safe experience.
+</p>
+</div>
+
+<footer>18+ only Play responsibly. This website provides information and comparison of online casinos and betting platforms.</footer>
+<script>
+// Mobile Hamburger Menu
+const menuToggle = document.getElementById('mobile-menu');
+const menuLinks = document.querySelector('.menu-links');
+
+menuToggle.addEventListener('click', () => {
+  if(menuLinks.style.display === 'flex'){
+    menuLinks.style.display = 'none';
+  } else {
+    menuLinks.style.display = 'flex';
+  }
+});
+
+// Contact Form Submission (temporary)
+const form = document.getElementById('contactForm');
+const formMsg = document.getElementById('formMessage');
+
+if(form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    formMsg.textContent = "Thanks! Your message has been sent (demo only).";
+    form.reset();
+  });
+}
+</script>
+</body>
+</html>

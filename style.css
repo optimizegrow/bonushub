@@ -1,0 +1,209 @@
+/* ===== General Styles ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1, h2, h3 {
+  color: white;
+}
+
+/* ===== Navigation Menu ===== */
+.menu {
+  background: #111;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu-links li a:hover {
+  color: limegreen;
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-links {
+    display: none; /* hide menu initially */
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 999;
+  }
+  .menu-links li {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #222;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ===== Section Styles ===== */
+.section {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* ===== Casino Cards ===== */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 0 10px #000;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 5px 0;
+}
+
+.card .bonus {
+  font-weight: bold;
+  color: limegreen;
+}
+
+.card ul {
+  text-align: left;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.card ul li {
+  margin-bottom: 5px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: limegreen;
+}
+
+/* ===== Contact Form ===== */
+.contact-form-section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #111;
+  border-radius: 10px;
+}
+
+.contact-form-section h2 {
+  text-align: center;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: white;
+}
+
+.contact-form-section input::placeholder,
+.contact-form-section textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form-section button {
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.contact-form-section button:hover {
+  background: limegreen;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background: #111;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* ===== Responsive Cards ===== */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
